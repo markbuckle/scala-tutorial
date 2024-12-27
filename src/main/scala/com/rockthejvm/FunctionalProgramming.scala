@@ -81,10 +81,10 @@ object FunctionalProgramming extends App {
   val aVector = Vector(1,2,3,4,5)
   
   // sets = no duplicates
-  val sSet = Set(1,2,3,4,1,2,3) // duplicated numbers appear only once: Set(1,2,3,4)
+  val aSet = Set(1,2,3,4,1,2,3) // duplicated numbers appear only once: Set(1,2,3,4)
   val setHas5 = aSet.contains(5) // false
   val anAddedSet = aSet + 5 // Set(1,2,3,4,5)
-  val aRemovedSet = aSert - 3 // Set(1,2,4)
+  val aRemovedSet = aSet - 3 // Set(1,2,4)
   
   // ranges 
   val aRange = 1 to 1000

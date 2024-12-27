@@ -41,14 +41,14 @@ object ObjectOrientation extends App { // extending app has a main method alread
   class Crocodile extends Animal with Carnivore{
     override def eat (animal: Animal): Unit = println("I am eating you, Animal")
 
-    override def ?!(thought: String): Unit = println(s"I was thinking: $thought")
+//    override def ?!(thought: String): Unit = println(s"I was thinking: $thought")
 
   }
 
   val aCroc = new Crocodile
   aCroc.eat(aDog)
   aCroc eat aDog // infix notation = object method argument, only available for methods with one argument
-  aCroc ?! "What if we could fly?"
+//  aCroc ?! "What if we could fly?"
 
   // operators in Scala are the same as methods
   val basicMath = 1 + 2
